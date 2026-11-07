@@ -4,33 +4,34 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fresh Tilapia | Fish Market</title>
+<title>SHABU MART 💀</title>
 
 <style>
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', Arial, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 body {
-    background: #f2faff;
-    color: #183b4e;
+    background: #090909;
+    color: white;
 }
 
 header {
-    background: #075985;
-    color: white;
+    background: #111;
     padding: 22px 8%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 2px solid #39ff14;
 }
 
 .logo {
     font-size: 25px;
     font-weight: bold;
+    color: #39ff14;
 }
 
 nav a {
@@ -40,40 +41,36 @@ nav a {
 }
 
 .hero {
-    min-height: 450px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-align: center;
-    padding: 60px 20px;
-    background: linear-gradient(135deg, #bae6fd, #e0f2fe);
+    padding: 100px 20px;
+    background: radial-gradient(circle, #173017, #090909);
 }
 
 .hero h1 {
-    font-size: 48px;
-    color: #075985;
-    margin-bottom: 15px;
+    font-size: 55px;
+    color: #39ff14;
+    margin-bottom: 20px;
 }
 
 .hero p {
+    color: #ccc;
     font-size: 18px;
     margin-bottom: 25px;
 }
 
 .btn {
-    display: inline-block;
-    background: #0284c7;
-    color: white;
-    padding: 13px 30px;
-    border-radius: 30px;
-    text-decoration: none;
+    background: #39ff14;
+    color: black;
     border: none;
+    padding: 13px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
     cursor: pointer;
-    font-size: 16px;
 }
 
 .btn:hover {
-    background: #0369a1;
+    background: white;
 }
 
 section {
@@ -82,81 +79,82 @@ section {
 }
 
 h2 {
+    color: #39ff14;
     font-size: 32px;
     margin-bottom: 15px;
-    color: #075985;
 }
 
 .products {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 25px;
     margin-top: 35px;
 }
 
 .card {
-    background: white;
-    width: 280px;
-    padding: 20px;
-    border-radius: 18px;
-    box-shadow: 0 5px 20px #00000012;
-    transition: 0.3s;
+    background: #171717;
+    border: 1px solid #39ff14;
+    border-radius: 15px;
+    width: 260px;
+    padding: 25px;
+    transition: .3s;
 }
 
 .card:hover {
     transform: translateY(-8px);
+    box-shadow: 0 0 20px #39ff1470;
 }
 
-.fish {
-    font-size: 85px;
+.emoji {
+    font-size: 65px;
     margin-bottom: 15px;
 }
 
 .card h3 {
-    color: #075985;
+    color: #39ff14;
     margin-bottom: 10px;
 }
 
 .price {
-    color: #0284c7;
-    font-size: 23px;
+    font-size: 22px;
+    margin: 15px;
+    color: #39ff14;
     font-weight: bold;
-    margin: 15px 0;
 }
 
 .about {
-    background: #e0f2fe;
+    background: #151515;
 }
 
-.contact {
-    background: #075985;
-    color: white;
-}
-
-.contact h2 {
-    color: white;
+.cart {
+    color: #39ff14;
+    font-size: 18px;
+    margin-top: 20px;
 }
 
 footer {
-    background: #082f49;
-    color: white;
+    background: #111;
+    padding: 25px;
     text-align: center;
-    padding: 20px;
+    color: #888;
+    border-top: 1px solid #39ff14;
 }
 
-@media(max-width: 600px) {
+.warning {
+    color: #ff4545;
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+@media(max-width:600px) {
     header {
         flex-direction: column;
         gap: 15px;
     }
 
-    nav a {
-        margin: 0 8px;
-    }
-
     .hero h1 {
-        font-size: 35px;
+        font-size: 38px;
     }
 }
 </style>
@@ -165,82 +163,98 @@ footer {
 <body>
 
 <header>
-    <div class="logo">🐟 Fresh Tilapia</div>
+    <div class="logo">💀 SHABU MART</div>
     <nav>
         <a href="#home">Home</a>
-        <a href="#products">Products</a>
+        <a href="#shop">Shop</a>
         <a href="#about">About</a>
-        <a href="#contact">Contact</a>
     </nav>
 </header>
 
 <div class="hero" id="home">
-    <div>
-        <h1>Fresh Tilapia, Fresh Every Day!</h1>
-        <p>Quality fresh tilapia at affordable prices.</p>
-        <a href="#products" class="btn">Shop Now</a>
-    </div>
+    <h1>WELCOME TO THE MEME MARKET 💀</h1>
+    <p>100% fictional products. 1000% questionable humor.</p>
+    <a href="#shop" class="btn">ENTER THE MARKET</a>
+    <p class="warning">⚠️ PARODY WEBSITE — NO REAL DRUGS SOLD</p>
 </div>
 
-<section id="products">
-    <h2>Our Fresh Products</h2>
-    <p>Fresh, delicious, and carefully selected for you!</p>
+<section id="shop">
+    <h2>🔥 THE ILLEGAL-LOOKING MEME SHOP</h2>
+    <p>Our products are completely imaginary.</p>
 
     <div class="products">
 
         <div class="card">
-            <div class="fish">🐟</div>
-            <h3>Fresh Tilapia</h3>
-            <p>Fresh and high-quality tilapia.</p>
-            <div class="price">₱120 / kg</div>
-            <a href="#contact" class="btn">Order Now</a>
+            <div class="emoji">🧂</div>
+            <h3>NPC SALT</h3>
+            <p>For seasoning your boring personality.</p>
+            <div class="price">₱69</div>
+            <button class="btn" onclick="addCart('NPC Salt')">
+                Add to Cart
+            </button>
         </div>
 
         <div class="card">
-            <div class="fish">🐠</div>
-            <h3>Large Tilapia</h3>
-            <p>Big and fresh tilapia, perfect for family meals.</p>
-            <div class="price">₱150 / kg</div>
-            <a href="#contact" class="btn">Order Now</a>
+            <div class="emoji">💊</div>
+            <h3>ANTI-BROKE PILLS</h3>
+            <p>Side effects include checking your bank account.</p>
+            <div class="price">₱420</div>
+            <button class="btn" onclick="addCart('Anti-Broke Pills')">
+                Add to Cart
+            </button>
         </div>
 
         <div class="card">
-            <div class="fish">🐟</div>
-            <h3>Medium Tilapia</h3>
-            <p>Affordable and delicious fresh fish.</p>
-            <div class="price">₱100 / kg</div>
-            <a href="#contact" class="btn">Order Now</a>
+            <div class="emoji">🧪</div>
+            <h3>GENIUS JUICE</h3>
+            <p>Still doesn't help you pass mathematics.</p>
+            <div class="price">₱999</div>
+            <button class="btn" onclick="addCart('Genius Juice')">
+                Add to Cart
+            </button>
         </div>
 
     </div>
+
+    <div class="cart">
+        🛒 Meme Cart: <span id="count">0</span> items
+    </div>
+
+    <p id="message" style="margin-top:15px;color:#39ff14;"></p>
 </section>
 
 <section class="about" id="about">
-    <h2>About Our Business</h2>
+    <h2>ABOUT THE BUSINESS 💀</h2>
     <p>
-        Welcome to Fresh Tilapia! We offer fresh and quality
-        tilapia at budget-friendly prices. Our goal is to provide
-        delicious and affordable fish for every Filipino family.
-        Freshness and customer satisfaction are our priorities!
+        Welcome to Shabu Mart, the most unserious shop on the internet.
+        We sell fictional products, questionable jokes,
+        and unlimited brainrot energy.
     </p>
-</section>
-
-<section class="contact" id="contact">
-    <h2>Order Your Fresh Tilapia Today!</h2>
-    <p>Want to buy? Contact us now!</p>
     <br>
-    <p>📞 Phone: 09XX-XXX-XXXX</p>
-    <p>📍 Location: Your Business Location</p>
-    <br>
-    <a href="https://www.facebook.com/" class="btn"
-       style="background:white;color:#075985;">
-       Contact Us on Facebook
-    </a>
+    <p>Our motto: "Walang pera pero may pangarap."</p>
 </section>
 
 <footer>
-    <p>© 2026 Fresh Tilapia | Freshness You Can Taste 🐟</p>
+    <p>© 2026 SHABU MART | MEME PARODY SHOP</p>
+    <p class="warning">
+        Fictional entertainment only. No real drugs,
+        controlled substances, or illegal products are offered.
+    </p>
 </footer>
+
+<script>
+let count = 0;
+
+function addCart(product) {
+    count++;
+
+    document.getElementById("count").textContent = count;
+
+    document.getElementById("message").textContent =
+        "💀 " + product + " added to your imaginary cart!";
+}
+</script>
 
 </body>
 </html>
+
