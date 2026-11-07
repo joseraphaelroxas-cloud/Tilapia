@@ -2,44 +2,245 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First HTML Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fresh Tilapia | Fish Market</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            text-align: center;
-            padding: 50px;
-        }
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, sans-serif;
+}
 
-        h1 {
-            color: #333;
-        }
+body {
+    background: #f2faff;
+    color: #183b4e;
+}
 
-        button {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
+header {
+    background: #075985;
+    color: white;
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-        button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.hero {
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #bae6fd, #e0f2fe);
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #075985;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #0284c7;
+    color: white;
+    padding: 13px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background: #0369a1;
+}
+
+section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #075985;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.card {
+    background: white;
+    width: 280px;
+    padding: 20px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px #00000012;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.fish {
+    font-size: 85px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #075985;
+    margin-bottom: 10px;
+}
+
+.price {
+    color: #0284c7;
+    font-size: 23px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+.about {
+    background: #e0f2fe;
+}
+
+.contact {
+    background: #075985;
+    color: white;
+}
+
+.contact h2 {
+    color: white;
+}
+
+footer {
+    background: #082f49;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media(max-width: 600px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+}
+</style>
 </head>
+
 <body>
 
-    <h1>Hello, World!</h1>
-    <p>Welcome to my first HTML website.</p>
+<header>
+    <div class="logo">🐟 Fresh Tilapia</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-    <button onclick="alert('Hello! Welcome to my website!')">
-        Click Me
-    </button>
+<div class="hero" id="home">
+    <div>
+        <h1>Fresh Tilapia, Fresh Every Day!</h1>
+        <p>Quality fresh tilapia at affordable prices.</p>
+        <a href="#products" class="btn">Shop Now</a>
+    </div>
+</div>
+
+<section id="products">
+    <h2>Our Fresh Products</h2>
+    <p>Fresh, delicious, and carefully selected for you!</p>
+
+    <div class="products">
+
+        <div class="card">
+            <div class="fish">🐟</div>
+            <h3>Fresh Tilapia</h3>
+            <p>Fresh and high-quality tilapia.</p>
+            <div class="price">₱120 / kg</div>
+            <a href="#contact" class="btn">Order Now</a>
+        </div>
+
+        <div class="card">
+            <div class="fish">🐠</div>
+            <h3>Large Tilapia</h3>
+            <p>Big and fresh tilapia, perfect for family meals.</p>
+            <div class="price">₱150 / kg</div>
+            <a href="#contact" class="btn">Order Now</a>
+        </div>
+
+        <div class="card">
+            <div class="fish">🐟</div>
+            <h3>Medium Tilapia</h3>
+            <p>Affordable and delicious fresh fish.</p>
+            <div class="price">₱100 / kg</div>
+            <a href="#contact" class="btn">Order Now</a>
+        </div>
+
+    </div>
+</section>
+
+<section class="about" id="about">
+    <h2>About Our Business</h2>
+    <p>
+        Welcome to Fresh Tilapia! We offer fresh and quality
+        tilapia at budget-friendly prices. Our goal is to provide
+        delicious and affordable fish for every Filipino family.
+        Freshness and customer satisfaction are our priorities!
+    </p>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Order Your Fresh Tilapia Today!</h2>
+    <p>Want to buy? Contact us now!</p>
+    <br>
+    <p>📞 Phone: 09XX-XXX-XXXX</p>
+    <p>📍 Location: Your Business Location</p>
+    <br>
+    <a href="https://www.facebook.com/" class="btn"
+       style="background:white;color:#075985;">
+       Contact Us on Facebook
+    </a>
+</section>
+
+<footer>
+    <p>© 2026 Fresh Tilapia | Freshness You Can Taste 🐟</p>
+</footer>
 
 </body>
 </html>
